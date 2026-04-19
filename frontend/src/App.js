@@ -10,8 +10,6 @@ import {
   Check,
   WhatsappLogo,
   EnvelopeSimple,
-  CaretDown,
-  Star,
 } from "@phosphor-icons/react";
 import {
   Accordion,
@@ -57,7 +55,6 @@ const Nav = () => {
   const links = [
     { label: "Features", href: "#features" },
     { label: "Process", href: "#process" },
-    { label: "Portfolio", href: "#portfolio" },
     { label: "Pricing", href: "#pricing" },
     { label: "FAQ", href: "#faq" },
   ];
@@ -166,7 +163,7 @@ const Hero = () => {
             more business.
           </h1>
           <p className="mt-8 max-w-xl text-inkSoft text-lg md:text-xl leading-relaxed">
-            Simple, fast, crafted sites for small UK businesses — built to make
+            Simple, fast, crafted sites for small UK businesses, built to make
             visitors pick up the phone, book, or walk through your door.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
@@ -179,12 +176,12 @@ const Hero = () => {
             </a>
           </div>
           <div className="mt-12 flex items-center gap-6 text-inkSoft text-sm">
-            <div className="flex items-center gap-1">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} size={14} weight="fill" className="text-gold" />
-              ))}
-            </div>
-            <span>Trusted by UK cafés, trades & shops</span>
+            <span className="inline-flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
+              Available for new projects
+            </span>
+            <span className="hidden sm:inline">·</span>
+            <span className="hidden sm:inline">Based in the UK</span>
           </div>
         </motion.div>
 
@@ -266,7 +263,7 @@ const Features = () => (
         </div>
         <div className="lg:col-span-6 lg:col-start-7 text-inkSoft text-lg leading-relaxed self-end">
           No bloated templates. No 200-page agency decks. Just honest websites
-          that do their job — turning visitors into customers.
+          that do their job, turning visitors into customers.
         </div>
       </div>
 
@@ -292,7 +289,7 @@ const Features = () => (
             Instant contact.
           </h3>
           <p className="mt-3 text-ivory/70 leading-relaxed text-sm md:text-base">
-            WhatsApp, click-to-call, booking links — visitors reach you in one tap.
+            WhatsApp, click to call, booking links. Visitors reach you in one tap.
           </p>
           <div className="absolute -right-10 -bottom-10 w-48 h-48 rounded-full bg-gold/20 blur-2xl" />
         </div>
@@ -320,10 +317,10 @@ const Features = () => (
 
 // ---------- Process ----------
 const processSteps = [
-  { n: "01", title: "Discovery call", desc: "A free 20-minute chat. We learn your business, your customers, and what you want this site to achieve." },
-  { n: "02", title: "Design & draft", desc: "Within 48 hours you'll see a live draft — real copy, real design, not a Figma mockup that goes nowhere." },
-  { n: "03", title: "Refine together", desc: "Two rounds of revisions on the house. We polish wording, images and flow until it feels unmistakably yours." },
-  { n: "04", title: "Launch & care", desc: "We host, secure and maintain it for a small monthly fee. You focus on your business — we handle the tech." },
+  { n: "01", title: "Discovery call", desc: "A free 20 minute chat. We learn your business, your customers, and what you want this site to achieve." },
+  { n: "02", title: "Design & draft", desc: "Your first draft is ready within 7 days of your brief. Real copy, real design, not a Figma mockup that goes nowhere." },
+  { n: "03", title: "Refine together", desc: "Two free revisions included. We polish wording, images and flow until it feels unmistakably yours." },
+  { n: "04", title: "Launch & care", desc: "We host, secure and maintain it for a small monthly fee, so you can focus on your business while we handle the tech." },
 ];
 
 const Process = () => (
@@ -332,7 +329,7 @@ const Process = () => (
       <div className="max-w-3xl mb-20 reveal">
         <p className="overline mb-4">— How it works</p>
         <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-ink leading-[1.05] text-balance">
-          From call to live website in under a week.
+          From first call to live website, without the faff.
         </h2>
       </div>
 
@@ -351,146 +348,6 @@ const Process = () => (
             </div>
           ))}
         </div>
-      </div>
-    </div>
-  </section>
-);
-
-// ---------- Portfolio ----------
-const portfolioItems = [
-  {
-    title: "Harbourside Bistro",
-    tag: "Restaurant · Brighton",
-    img: "https://images.unsplash.com/photo-1651886312896-c7af63c0fc8a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxsYXB0b3AlMjBzY3JlZW4lMjBtb2NrdXB8ZW58MHx8fHwxNzc2NjIzOTQ5fDA&ixlib=rb-4.1.0&q=85",
-  },
-  {
-    title: "Roberts & Sons Joinery",
-    tag: "Trade · Manchester",
-    img: "https://images.unsplash.com/photo-1706515562701-0d0fc1b38a86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwzfHxsYXB0b3AlMjBzY3JlZW4lMjBtb2NrdXB8ZW58MHx8fHwxNzc2NjIzOTQ5fDA&ixlib=rb-4.1.0&q=85",
-  },
-  {
-    title: "The Ivy Florist",
-    tag: "Retail · London",
-    img: "https://images.unsplash.com/photo-1730794545099-14902983739d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxsYXB0b3AlMjBzY3JlZW4lMjBtb2NrdXB8ZW58MHx8fHwxNzc2NjIzOTQ5fDA&ixlib=rb-4.1.0&q=85",
-  },
-];
-
-const Portfolio = () => (
-  <section id="portfolio" className="section-pad bg-sand" data-testid="portfolio-section">
-    <div className="container-x">
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 reveal">
-        <div>
-          <p className="overline mb-4">— Selected work</p>
-          <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-ink leading-[1.05] max-w-xl text-balance">
-            Quiet websites, loud results.
-          </h2>
-        </div>
-        <a href="#contact" className="text-ink underline underline-offset-8 decoration-gold decoration-2 hover:text-gold transition-colors">
-          Start your project →
-        </a>
-      </div>
-
-      <div className="grid md:grid-cols-12 gap-6">
-        <div className="md:col-span-7 reveal">
-          <ProjectCard item={portfolioItems[0]} tall />
-        </div>
-        <div className="md:col-span-5 flex flex-col gap-6">
-          <div className="reveal"><ProjectCard item={portfolioItems[1]} /></div>
-          <div className="reveal"><ProjectCard item={portfolioItems[2]} /></div>
-        </div>
-      </div>
-    </div>
-  </section>
-);
-
-const ProjectCard = ({ item, tall = false }) => (
-  <a
-    href="#contact"
-    className="group block relative rounded-2xl overflow-hidden bg-ivory border border-borderLight"
-    data-testid={`portfolio-card-${item.title.toLowerCase().replace(/\s+/g, "-")}`}
-  >
-    <div className={`overflow-hidden ${tall ? "aspect-[4/5]" : "aspect-[5/4]"}`}>
-      <img
-        src={item.img}
-        alt={item.title}
-        className="w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
-      />
-    </div>
-    <div className="p-6 flex items-center justify-between">
-      <div>
-        <h3 className="font-serif text-xl md:text-2xl text-ink">{item.title}</h3>
-        <p className="text-sm text-inkSoft mt-1">{item.tag}</p>
-      </div>
-      <span className="w-10 h-10 rounded-full border border-ink/20 flex items-center justify-center text-ink group-hover:bg-ink group-hover:text-ivory group-hover:border-ink transition-all">
-        <ArrowUpRight size={16} weight="bold" />
-      </span>
-    </div>
-  </a>
-);
-
-// ---------- Testimonials ----------
-const testimonials = [
-  {
-    quote:
-      "Bookings up 40% in the first month. The site just works — customers call us straight from the homepage.",
-    name: "Sarah M.",
-    role: "Owner, Harbourside Bistro",
-    avatar:
-      "https://images.unsplash.com/photo-1753164726626-e4c38056a03f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwxfHxzbWFsbCUyMGJ1c2luZXNzJTIwb3duZXIlMjBzbWlsaW5nfGVufDB8fHx8MTc3NjYyMzk0OXww&ixlib=rb-4.1.0&q=85",
-  },
-  {
-    quote:
-      "Honest pricing, no nonsense, and a site that finally looks like the quality of our work.",
-    name: "James R.",
-    role: "Roberts & Sons Joinery",
-    avatar:
-      "https://images.unsplash.com/photo-1687422808204-6892507bb8d9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwyfHxzbWFsbCUyMGJ1c2luZXNzJTIwb3duZXIlMjBzbWlsaW5nfGVufDB8fHx8MTc3NjYyMzk0OXww&ixlib=rb-4.1.0&q=85",
-  },
-  {
-    quote:
-      "Live in five days. My florist shop finally feels as calm online as it does in person.",
-    name: "Amelia T.",
-    role: "The Ivy Florist",
-    avatar:
-      "https://images.unsplash.com/photo-1753164726626-e4c38056a03f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwxfHxzbWFsbCUyMGJ1c2luZXNzJTIwb3duZXIlMjBzbWlsaW5nfGVufDB8fHx8MTc3NjYyMzk0OXww&ixlib=rb-4.1.0&q=85",
-  },
-];
-
-const Testimonials = () => (
-  <section className="section-pad" data-testid="testimonials-section">
-    <div className="container-x">
-      <div className="max-w-2xl mb-16 reveal">
-        <p className="overline mb-4">— From our clients</p>
-        <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-ink leading-[1.05] text-balance">
-          Small businesses. Real results.
-        </h2>
-      </div>
-
-      <div className="grid md:grid-cols-3 gap-6">
-        {testimonials.map((t, i) => (
-          <div
-            key={i}
-            className={`reveal rounded-2xl p-8 border border-borderLight bg-ivory flex flex-col ${
-              i === 1 ? "md:translate-y-8" : ""
-            }`}
-          >
-            <div className="flex gap-1 text-gold mb-4">
-              {[...Array(5)].map((_, k) => (
-                <Star key={k} size={14} weight="fill" />
-              ))}
-            </div>
-            <p className="font-serif text-xl md:text-2xl text-ink leading-snug flex-1 text-balance">
-              "{t.quote}"
-            </p>
-            <div className="mt-6 flex items-center gap-3 pt-6 border-t border-borderLight">
-              <img src={t.avatar} alt={t.name} className="w-10 h-10 rounded-full object-cover" />
-              <div>
-                <p className="text-sm font-semibold text-ink">{t.name}</p>
-                <p className="text-xs text-inkSoft">{t.role}</p>
-              </div>
-            </div>
-          </div>
-        ))}
       </div>
     </div>
   </section>
@@ -612,11 +469,11 @@ const Pricing = () => (
 
 // ---------- FAQ ----------
 const faqs = [
-  { q: "How long does a website take to build?", a: "Most Starter and Standard sites go live within 5–7 working days from your discovery call. Pro builds take 2–3 weeks depending on scope." },
-  { q: "What's included in the monthly fee?", a: "Fast UK hosting, SSL certificate, regular security updates, backups, and small content tweaks (wording, images, opening hours). No hidden extras." },
-  { q: "Do I own the website?", a: "Yes — 100%. We host and maintain it, but the design and content are yours. We can transfer everything if you ever choose to leave." },
-  { q: "Can you help with copy, photos and SEO?", a: "Absolutely. We'll write clear, converting copy with you, suggest photography, and set up on-page SEO so you show up on Google for local searches." },
-  { q: "What if I need changes later?", a: "Small updates are included in your monthly fee. Larger changes or new sections are quoted honestly and transparently — no surprise invoices." },
+  { q: "How long does a website take to build?", a: "Most Starter and Standard sites go live within 2 weeks of the first call. Pro builds take longer, depending on scope." },
+  { q: "What's included in the monthly fee?", a: "Fast UK hosting, SSL certificate, regular security updates, backups, and small content tweaks such as wording, images or opening hours. No hidden extras." },
+  { q: "Do I own the website?", a: "Yes, 100%. We host and maintain it, but the design and content are yours. We can transfer everything if you ever choose to leave." },
+  { q: "Can you help with copy, photos and SEO?", a: "Absolutely. We'll write clear, converting copy with you, suggest photography, and set up on page SEO so you show up on Google for local searches." },
+  { q: "What if I need changes later?", a: "Small updates are included in your monthly fee. Larger changes or new sections are quoted honestly and transparently, with no surprise invoices." },
   { q: "Do you work with businesses outside the UK?", a: "Our sweet spot is UK small businesses, but we occasionally take on international projects. Get in touch and we'll tell you honestly if we're a good fit." },
 ];
 
@@ -693,7 +550,7 @@ const Contact = () => {
                 <span className="italic text-gold">website review.</span>
               </h2>
               <p className="mt-6 text-ivory/75 text-lg leading-relaxed max-w-md">
-                Fill in your details and we'll come back to you within a working day with honest, useful feedback — no sales pitch.
+                Fill in your details and we'll come back to you within a working day with honest, useful feedback. No sales pitch.
               </p>
               <div className="mt-10 space-y-4">
                 <a href={EMAIL_URL} className="flex items-center gap-3 text-ivory/90 hover:text-gold transition-colors" data-testid="contact-email-link">
@@ -777,8 +634,8 @@ const Footer = () => (
           <ul className="space-y-3 text-ink">
             <li><a href="#features" className="hover:text-gold transition-colors">Features</a></li>
             <li><a href="#process" className="hover:text-gold transition-colors">Process</a></li>
-            <li><a href="#portfolio" className="hover:text-gold transition-colors">Portfolio</a></li>
             <li><a href="#pricing" className="hover:text-gold transition-colors">Pricing</a></li>
+            <li><a href="#faq" className="hover:text-gold transition-colors">FAQ</a></li>
           </ul>
         </div>
         <div className="md:col-span-4">
@@ -871,8 +728,6 @@ function App() {
         <Hero />
         <Features />
         <Process />
-        <Portfolio />
-        <Testimonials />
         <Pricing />
         <FAQ />
         <Contact />
