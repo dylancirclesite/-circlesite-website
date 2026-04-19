@@ -1,0 +1,187 @@
+{
+  "theme": "light",
+  "archetype": "Archetype 1 (Organic & Earthy) - Warm Editorial Luxury Variant",
+  "persona_and_tone": {
+    "target_audience": "UK small business owners (trades, shops, cafes, services).",
+    "brand_voice": "Confident, trustworthy, modern, premium, not intimidating.",
+    "visual_mood": "Warm, artisanal yet digital, expensive but simple, high contrast editorial."
+  },
+  "colors": {
+    "background_primary": "#FDFBF7",
+    "background_secondary": "#F4EFE6",
+    "background_dark": "#0A1128",
+    "text_primary": "#0A1128",
+    "text_secondary": "#475569",
+    "accent_primary": "#C49A45",
+    "accent_hover": "#A67F33",
+    "border_light": "#E2DCD0",
+    "glass_bg": "rgba(253, 251, 247, 0.7)",
+    "glass_border": "rgba(255, 255, 255, 0.4)"
+  },
+  "typography": {
+    "heading_font": "Playfair Display",
+    "body_font": "Outfit",
+    "rules": {
+      "h1": "text-5xl sm:text-6xl+ tracking-tight leading-none font-bold",
+      "h2": "text-4xl sm:text-5xl tracking-tight leading-tight font-bold",
+      "h3": "text-2xl sm:text-3xl leading-snug font-semibold",
+      "body": "text-base sm:text-lg leading-relaxed",
+      "overline": "text-xs uppercase tracking-[0.2em] font-bold text-accent_primary"
+    }
+  },
+  "layout_and_spacing": {
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "section_spacing": "py-24 lg:py-32",
+    "grid_system": "Bento Grid Protocol (Mode A: Tetris) for features and portfolio. Generous gaps (gap-8 to gap-12).",
+    "border_radius": "rounded-2xl",
+    "shadows": "shadow-[0_8px_32px_rgba(10,17,40,0.08)]"
+  },
+  "components_strategy": {
+    "header": "Crystal Glassmorphism sticky top. Logo left, Nav center, CTA right. backdrop-blur-xl bg-[#FDFBF7]/80.",
+    "hero": "Editorial layout. Massive Serif H1 on the left. High-end abstract/office image on the right. Subtle grain texture overlay.",
+    "features": "Bento grid. Mix of square and tall cards. Icons should be delicate duotone.",
+    "process": "Vertical timeline with large typography numbers (01, 02, 03) and staggered scroll animations.",
+    "portfolio": "Large image cards with hover scale effect. Use laptop mockups to show websites in context.",
+    "testimonials": "Editorial masonry grid or slow-moving marquee. Use the small business owner portraits.",
+    "pricing": "3 columns. 'Standard' is highlighted with accent border and subtle tracing beam effect. Clear delineation of setup vs monthly fees.",
+    "faq": "Clean accordion using Shadcn. No borders, just clean lines and typography.",
+    "contact": "Shadcn form customized with warm borders. Deep ink background for the footer section.",
+    "floating_whatsapp": "Fixed bottom right. Z-index 50. Pill shaped with pulsing dot or animated icon. Glassmorphism or solid accent color."
+  },
+  "motion_and_interactions": {
+    "scroll": "Lenis smooth scrolling is mandatory.",
+    "entrance": "Staggered fade-up and slight Y-translation (framer-motion).",
+    "hover": "Buttons scale up slightly (1.02) and change background color. Portfolio images zoom slowly (1.05) within hidden overflow containers."
+  },
+  "assets": {
+    "logos": [
+      {
+        "url": "/assets/logo.png",
+        "category": "brand_logo",
+        "description": "Blue geometric circle design (provided by user)"
+      }
+    ],
+    "hero_backgrounds": [
+      {
+        "url": "https://images.unsplash.com/photo-1740602552445-c71ac1dd04d9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3YXJtJTIwb2ZmaWNlJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzc2NjIzOTYwfDA&ixlib=rb-4.1.0&q=85",
+        "category": "hero_image",
+        "description": "A warm modern office desk, sets a premium professional tone."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1758551038941-a67e29026bff?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwzfHxtaW5pbWFsJTIwbHV4dXJ5JTIwYWJzdHJhY3QlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3NjYyMzk2MHww&ixlib=rb-4.1.0&q=85",
+        "category": "abstract_accent",
+        "description": "Golden fabric flowing, use for subtle section backgrounds."
+      }
+    ],
+    "portfolio_mockups": [
+      {
+        "url": "https://images.unsplash.com/photo-1651886312896-c7af63c0fc8a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxsYXB0b3AlMjBzY3JlZW4lMjBtb2NrdXB8ZW58MHx8fHwxNzc2NjIzOTQ5fDA&ixlib=rb-4.1.0&q=85",
+        "category": "portfolio",
+        "description": "Laptop mockup for portfolio item 1"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1706515562701-0d0fc1b38a86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwzfHxsYXB0b3AlMjBzY3JlZW4lMjBtb2NrdXB8ZW58MHx8fHwxNzc2NjIzOTQ5fDA&ixlib=rb-4.1.0&q=85",
+        "category": "portfolio",
+        "description": "Laptop mockup for portfolio item 2"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1730794545099-14902983739d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxsYXB0b3AlMjBzY3JlZW4lMjBtb2NrdXB8ZW58MHx8fHwxNzc2NjIzOTQ5fDA&ixlib=rb-4.1.0&q=85",
+        "category": "portfolio",
+        "description": "Laptop mockup for portfolio item 3"
+      }
+    ],
+    "testimonials": [
+      {
+        "url": "https://images.unsplash.com/photo-1753164726626-e4c38056a03f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwxfHxzbWFsbCUyMGJ1c2luZXNzJTIwb3duZXIlMjBzbWlsaW5nfGVufDB8fHx8MTc3NjYyMzk0OXww&ixlib=rb-4.1.0&q=85",
+        "category": "testimonial_avatar",
+        "description": "Smiling potter/business owner"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1687422808204-6892507bb8d9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwyfHxzbWFsbCUyMGJ1c2luZXNzJTIwb3duZXIlMjBzbWlsaW5nfGVufDB8fHx8MTc3NjYyMzk0OXww&ixlib=rb-4.1.0&q=85",
+        "category": "testimonial_avatar",
+        "description": "Food cart owners"
+      }
+    ]
+  },
+  "content_mapping": {
+    "header": {
+      "links": [
+        "Features",
+        "Portfolio",
+        "Testimonials",
+        "Pricing"
+      ],
+      "cta": "Get Started Now"
+    },
+    "hero": {
+      "headline": "Websites that work.",
+      "subheadline": "Grow your business with an impactful website built for results.",
+      "ctas": [
+        "Free Website Review",
+        "See Pricing"
+      ]
+    },
+    "features": [
+      {
+        "title": "More Customers.",
+        "description": "Bold, clear websites that make your business stand out. Get found easily. Mobile optimised and smooth."
+      },
+      {
+        "title": "Instant Contact.",
+        "description": "Quick call or WhatsApp. Fast ways for customers to reach you. No hesitation."
+      },
+      {
+        "title": "Fast. Reliable.",
+        "description": "Lightning-speed load. Simple layouts. Every visitor lands where you want."
+      }
+    ],
+    "pricing": [
+      {
+        "tier": "Starter",
+        "setup_fee": "£149 one-off",
+        "monthly_fee": "£25/month hosting & support",
+        "features": [
+          "1-page professional site",
+          "Mobile optimised"
+        ],
+        "highlighted": false
+      },
+      {
+        "tier": "Standard",
+        "setup_fee": "£249 one-off",
+        "monthly_fee": "£35/month hosting & support",
+        "features": [
+          "Up to 3 pages",
+          "WhatsApp, Click-to-dial & all contact features"
+        ],
+        "highlighted": true,
+        "badge": "Most Popular"
+      },
+      {
+        "tier": "Pro",
+        "setup_fee": "Custom build",
+        "monthly_fee": "£49/month hosting & support",
+        "features": [
+          "Up to 10 pages, advanced options",
+          "Calendar integrations, full support"
+        ],
+        "highlighted": false
+      }
+    ],
+    "contact": {
+      "email": "hello@circlesite.uk",
+      "whatsapp_link": "https://wa.me/447494852204?text=Hi%20I%27m%20interested%20in%20getting%20a%20website%20built"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Ensure all fonts (Playfair Display and Outfit) are properly imported from Google Fonts.",
+    "Install and use Lenis for smooth scrolling.",
+    "Use @phosphor-icons/react (duotone) for features and UI elements.",
+    "Ensure the floating WhatsApp button is animated (e.g., subtle ping animation) and persistent.",
+    "Implement the bento grid for features and the masonry layout for portfolio.",
+    "All interactive elements MUST have data-testid attributes.",
+    "Do not use generic 'card' components everywhere; use solid rectangles with ample padding (p-8, p-12) and subtle borders for the 'Warm Editorial Luxury' look.",
+    "Ensure header has backdrop-blur-xl and does not collide with page content.",
+    "Never use raw transparent backgrounds over images, use glassmorphism to preserve readability."
+  ]
+}
