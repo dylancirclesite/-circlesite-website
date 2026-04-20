@@ -197,7 +197,6 @@ const Hero = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-tr from-ink/30 via-transparent to-transparent" />
             <div className="absolute left-6 bottom-6 right-6 text-ivory">
-              <p className="text-xs uppercase tracking-[0.2em] opacity-80">Craft · Speed · Clarity</p>
             </div>
           </div>
           <div className="absolute -left-6 -bottom-6 bg-sand border border-borderLight rounded-xl px-4 py-3 shadow-md hidden md:block">
