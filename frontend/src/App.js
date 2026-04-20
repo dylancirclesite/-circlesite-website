@@ -332,7 +332,6 @@ const Process = () => (
       </div>
 
       <div className="relative">
-        <div className="absolute left-[36px] md:left-[52px] top-0 bottom-0 w-px bg-borderLight hidden md:block" />
         <div className="space-y-14">
           {processSteps.map((s, i) => (
             <div key={s.n} className="grid md:grid-cols-12 gap-6 md:gap-10 items-start reveal">
