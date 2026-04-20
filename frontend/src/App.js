@@ -203,7 +203,7 @@ const Hero = () => {
           </div>
           <div className="absolute -left-6 -bottom-6 bg-sand border border-borderLight rounded-xl px-4 py-3 shadow-md hidden md:block">
             <p className="text-xs text-inkSoft">Avg. build time</p>
-            <p className="font-serif text-2xl text-ink">5–7 days</p>
+            <p className="font-serif text-2xl text-ink">10-14 days</p>
           </div>
         </motion.div>
       </div>
@@ -289,7 +289,7 @@ const Features = () => (
             Instant contact.
           </h3>
           <p className="mt-3 text-ivory/70 leading-relaxed text-sm md:text-base">
-            WhatsApp, click to call, booking links. Visitors reach you in one tap.
+            WhatsApp, click to call, direct email buttons. Visitors reach you in one tap.
           </p>
           <div className="absolute -right-10 -bottom-10 w-48 h-48 rounded-full bg-gold/20 blur-2xl" />
         </div>
@@ -318,7 +318,7 @@ const Features = () => (
 // ---------- Process ----------
 const processSteps = [
   { n: "01", title: "Discovery call", desc: "A free 20 minute chat. We learn your business, your customers, and what you want this site to achieve." },
-  { n: "02", title: "Design & draft", desc: "Your first draft is ready within 7 days of your brief. Real copy, real design, not a Figma mockup that goes nowhere." },
+  { n: "02", title: "Design & draft", desc: "Your first draft is ready within 7 working days of your brief. Real copy, real design, not a Figma mockup that goes nowhere." },
   { n: "03", title: "Refine together", desc: "Two free revisions included. We polish wording, images and flow until it feels unmistakably yours." },
   { n: "04", title: "Launch & care", desc: "We host, secure and maintain it for a small monthly fee, so you can focus on your business while we handle the tech." },
 ];
@@ -357,8 +357,8 @@ const Process = () => (
 const tiers = [
   {
     tier: "Starter",
-    setup: "£149",
-    monthly: "£25",
+    setup: "£199",
+    monthly: "£29",
     tagline: "Get online, quickly.",
     features: [
       "1-page professional site",
@@ -370,13 +370,12 @@ const tiers = [
   },
   {
     tier: "Standard",
-    setup: "£249",
-    monthly: "£35",
+    setup: "£299",
+    monthly: "£39",
     tagline: "Our most popular build.",
     features: [
       "Up to 3 pages",
       "All contact features",
-      "Basic SEO setup",
       "Image gallery / services",
       "Priority support",
     ],
@@ -471,7 +470,7 @@ const Pricing = () => (
 const faqs = [
   { q: "How long does a website take to build?", a: "Most Starter and Standard sites go live within 2 weeks of the first call. Pro builds take longer, depending on scope." },
   { q: "What's included in the monthly fee?", a: "Fast UK hosting, SSL certificate, regular security updates, backups, and small content tweaks such as wording, images or opening hours. No hidden extras." },
-  { q: "Do I own the website?", a: "Yes, 100%. We host and maintain it, but the design and content are yours. We can transfer everything if you ever choose to leave." },
+  { q: "Do I own the website?", a: "Yes, 100%. We host and maintain it, but the design and content are yours." },
   { q: "Can you help with copy, photos and SEO?", a: "Absolutely. We'll write clear, converting copy with you, suggest photography, and set up on page SEO so you show up on Google for local searches." },
   { q: "What if I need changes later?", a: "Small updates are included in your monthly fee. Larger changes or new sections are quoted honestly and transparently, with no surprise invoices." },
   { q: "Do you work with businesses outside the UK?", a: "Our sweet spot is UK small businesses, but we occasionally take on international projects. Get in touch and we'll tell you honestly if we're a good fit." },
