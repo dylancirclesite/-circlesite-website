@@ -318,7 +318,7 @@ const Features = () => (
 // ---------- Process ----------
 const processSteps = [
   { n: "01", title: "Discovery call", desc: "A free 20 minute chat. We learn your business, your customers, and what you want this site to achieve." },
-  { n: "02", title: "Design & draft", desc: "Your first draft is ready within 7 working days of your brief. Real copy, real design, not a Figma mockup that goes nowhere." },
+  { n: "02", title: "Design & draft", desc: "Your first draft is ready within 7 working days of your brief. Real copy, real design, not a mockup that goes nowhere." },
   { n: "03", title: "Refine together", desc: "Two free revisions included. We polish wording, images and flow until it feels unmistakably yours." },
   { n: "04", title: "Launch & care", desc: "We host, secure and maintain it for a small monthly fee, so you can focus on your business while we handle the tech." },
 ];
