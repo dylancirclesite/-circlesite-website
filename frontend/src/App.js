@@ -27,7 +27,7 @@ const API = `${BACKEND_URL}/api`;
 
 const WHATSAPP_URL =
   "https://wa.me/447356232144?text=Hi%20I%27m%20interested%20in%20getting%20a%20website%20built";
-const EMAIL_URL = "mailto:dylan@circlesite.uk?subject=Website%20Enquiry";
+const EMAIL_URL = "mailto:hello@circlesite.uk?subject=Website%20Enquiry";
 
 // ---------- Scroll reveal hook ----------
 function useInViewReveal() {
@@ -550,7 +550,7 @@ const Contact = () => {
               <div className="mt-10 space-y-4">
                 <a href={EMAIL_URL} className="flex items-center gap-3 text-ivory/90 hover:text-gold transition-colors" data-testid="contact-email-link">
                   <EnvelopeSimple size={18} />
-                  dylan@circlesite.uk
+                  hello@circlesite.uk
                 </a>
                 <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="flex items-center gap-3 text-ivory/90 hover:text-gold transition-colors" data-testid="contact-whatsapp-link">
                   <WhatsappLogo size={18} />
@@ -636,7 +636,7 @@ const Footer = () => (
         <div className="md:col-span-4">
           <p className="overline mb-4">Get in touch</p>
           <ul className="space-y-3 text-ink">
-            <li><a href={EMAIL_URL} className="hover:text-gold transition-colors">dylan@circlesite.uk</a></li>
+            <li><a href={EMAIL_URL} className="hover:text-gold transition-colors">hello@circlesite.uk</a></li>
             <li><a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="hover:text-gold transition-colors">WhatsApp: +447356232144</a></li>
           </ul>
         </div>
