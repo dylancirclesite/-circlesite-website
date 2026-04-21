@@ -26,7 +26,7 @@ const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 const WHATSAPP_URL =
-  "https://wa.me/447494852204?text=Hi%20I%27m%20interested%20in%20getting%20a%20website%20built";
+  "https://wa.me/447356232144?text=Hi%20I%27m%20interested%20in%20getting%20a%20website%20built";
 const EMAIL_URL = "mailto:hello@circlesite.uk?subject=Website%20Enquiry";
 
 // ---------- Scroll reveal hook ----------
@@ -637,7 +637,7 @@ const Footer = () => (
           <p className="overline mb-4">Get in touch</p>
           <ul className="space-y-3 text-ink">
             <li><a href={EMAIL_URL} className="hover:text-gold transition-colors">hello@circlesite.uk</a></li>
-            <li><a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="hover:text-gold transition-colors">WhatsApp: +44 7494 852204</a></li>
+            <li><a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="hover:text-gold transition-colors">WhatsApp: +447356232144</a></li>
           </ul>
         </div>
       </div>
