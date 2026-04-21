@@ -163,8 +163,7 @@ const Hero = () => {
             more business.
           </h1>
           <p className="mt-8 max-w-xl text-inkSoft text-lg md:text-xl leading-relaxed">
-            Simple, fast, crafted sites for small UK businesses, built to make
-            visitors pick up the phone, book, or walk through your door.
+            Simple, fast, crafted websites for small businesses in Southampton and across the UK, built to generate more calls, enquiries, and customers.r.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <a href="#contact" className="btn-primary" data-testid="hero-cta-primary">
