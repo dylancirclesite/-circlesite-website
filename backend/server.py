@@ -26,7 +26,7 @@ RESEND_API_KEY = os.environ.get('RESEND_API_KEY', '').strip()
 SENDER_EMAIL = os.environ.get('SENDER_EMAIL', 'onboarding@resend.dev')
 CONTACT_RECIPIENT = os.environ.get('CONTACT_RECIPIENT', 'hello@circlesite.uk')
 if RESEND_API_KEY:
-    resend.api_key = re_AfWw3Mak_5qmZxy3ZzofZZQWScZJkTVeD
+    resend.api_key = RESEND_API_KEY
 
 # Create the main app without a prefix
 app = FastAPI(title="CircleSite API")
