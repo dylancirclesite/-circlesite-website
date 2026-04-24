@@ -53,10 +53,10 @@ function useInViewReveal() {
 const Nav = () => {
   const [open, setOpen] = useState(false);
   const links = [
-    { label: "Features", href: "#features" },
-    { label: "Process", href: "#process" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "FAQ", href: "#faq" },
+    { label: "Features", href: "/#features" },
+    { label: "Process", href: "/#process" },
+    { label: "Pricing", href: "/#pricing" },
+    { label: "FAQ", href: "/#faq" },
   ];
   return (
     <header
@@ -64,7 +64,7 @@ const Nav = () => {
       data-testid="site-nav"
     >
       <div className="container-x flex items-center justify-between h-[72px]">
-        <a href="#top" className="flex items-center gap-2" data-testid="nav-logo">
+        <a href="/#top" className="flex items-center gap-2" data-testid="nav-logo">
           <img src="/assets/logo.png" alt="CircleSite" className="h-9 w-9" />
           <span className="font-serif text-xl tracking-tight text-ink">
             CircleSite
@@ -84,7 +84,7 @@ const Nav = () => {
         </nav>
         <div className="flex items-center gap-3">
           <a
-            href="#contact"
+            href="/#contact"
             className="btn-gold hidden sm:inline-flex"
             data-testid="nav-cta-button"
           >
@@ -122,7 +122,7 @@ const Nav = () => {
                   {l.label}
                 </a>
               ))}
-              <a href="#contact" className="btn-gold mt-2 self-start" onClick={() => setOpen(false)}>
+              <a href="/#contact" className="btn-gold mt-2 self-start" onClick={() => setOpen(false)}>
                 Get Started <ArrowUpRight size={16} weight="bold" />
               </a>
             </div>
@@ -265,7 +265,6 @@ const Features = () => (
       </div>
 
       <div className="grid md:grid-cols-6 gap-6 auto-rows-[minmax(180px,auto)]">
-        {/* More customers - large left */}
         <div className="md:col-span-3 md:row-span-2 bg-ivory border border-borderLight rounded-2xl p-8 md:p-12 flex flex-col justify-between reveal hover:shadow-[0_16px_40px_rgba(10,17,40,0.08)] transition-shadow">
           <TrendUp size={40} weight="duotone" className="text-gold" />
           <div className="mt-auto">
@@ -279,7 +278,6 @@ const Features = () => (
           </div>
         </div>
 
-        {/* Instant contact - top right wide */}
         <div className="md:col-span-3 bg-ink text-ivory rounded-2xl p-8 md:p-10 relative overflow-hidden reveal">
           <ChatCircleDots size={32} weight="duotone" className="text-gold mb-6" />
           <h3 className="font-serif text-2xl md:text-3xl leading-tight">
@@ -291,7 +289,6 @@ const Features = () => (
           <div className="absolute -right-10 -bottom-10 w-48 h-48 rounded-full bg-gold/20 blur-2xl" />
         </div>
 
-        {/* Fast reliable - bottom mid */}
         <div className="md:col-span-2 bg-ivory border border-borderLight rounded-2xl p-8 reveal">
           <Lightning size={32} weight="duotone" className="text-gold mb-6" />
           <h3 className="font-serif text-2xl text-ink leading-tight">
@@ -302,7 +299,6 @@ const Features = () => (
           </p>
         </div>
 
-        {/* Small stat card */}
         <div className="md:col-span-1 bg-gold text-ink rounded-2xl p-6 flex flex-col justify-between reveal">
           <p className="text-xs uppercase tracking-[0.2em] font-semibold">Load time</p>
           <p className="font-serif text-5xl leading-none mt-auto">&lt;1s</p>
@@ -601,7 +597,12 @@ const Contact = () => {
                 {loading ? "Sending..." : sent ? "Thanks — we'll be in touch" : "Request my free review"}
                 {!loading && !sent && <ArrowUpRight size={16} weight="bold" />}
               </button>
-              <p className="text-xs text-ivory/50">We reply within one working day. No spam, ever.</p>
+              <p className="text-xs text-ivory/50">
+                We reply within one working day. No spam, ever. By submitting this form, you agree that CircleSite can use your details to respond to your enquiry. {" "}
+                <a href="/privacy-policy" className="text-gold underline underline-offset-4">
+                  Privacy Policy
+                </a>
+              </p>
             </form>
           </div>
         </div>
@@ -609,6 +610,106 @@ const Contact = () => {
     </section>
   );
 };
+
+// ---------- Privacy Policy ----------
+const PrivacyPolicy = () => (
+  <div className="bg-ivory min-h-screen pt-[120px] pb-20">
+    <div className="container-x max-w-4xl">
+      <a href="/" className="text-sm text-gold hover:underline underline-offset-4">
+        Back to homepage
+      </a>
+
+      <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-ink mt-8 mb-6">
+        Privacy Policy
+      </h1>
+
+      <p className="text-inkSoft mb-10">Last updated: 24 April 2026</p>
+
+      <div className="space-y-8 text-inkSoft leading-relaxed">
+        <section>
+          <h2 className="font-serif text-2xl text-ink mb-3">Who we are</h2>
+          <p>
+            CircleSite provides website design and related digital services for small businesses in the UK.
+            If you have any questions about this Privacy Policy, you can contact us at {" "}
+            <a href={EMAIL_URL} className="text-gold underline underline-offset-4">
+              hello@circlesite.uk
+            </a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-serif text-2xl text-ink mb-3">Information we collect</h2>
+          <p>
+            When you submit an enquiry through our website, we may collect your name, email address,
+            message details and basic technical information such as the time your enquiry was submitted.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-serif text-2xl text-ink mb-3">How we use your information</h2>
+          <p>
+            We use your information to respond to your enquiry, discuss our services with you,
+            provide quotes or information you have requested, keep a record of website enquiries
+            and improve our website and enquiry process.
+          </p>
+          <p className="mt-3">We do not sell your personal information.</p>
+        </section>
+
+        <section>
+          <h2 className="font-serif text-2xl text-ink mb-3">How your information is stored</h2>
+          <p>
+            Enquiries submitted through our website may be stored securely in our website database
+            and sent by email to CircleSite.
+          </p>
+          <p className="mt-3">
+            We currently use third party service providers to help process and manage enquiries,
+            including website hosting, backend hosting, database storage, email delivery and business email services.
+          </p>
+          <p className="mt-3">
+            These may include Vercel, Render, MongoDB, Resend and Zoho Mail.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-serif text-2xl text-ink mb-3">How long we keep your information</h2>
+          <p>
+            We only keep enquiry information for as long as reasonably necessary to respond to your enquiry,
+            manage our business relationship, keep business records and meet any legal or accounting requirements.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-serif text-2xl text-ink mb-3">Your rights</h2>
+          <p>
+            You can contact us at any time to ask us to confirm what information we hold about you,
+            correct inaccurate information, delete your information where appropriate, or stop contacting you.
+          </p>
+          <p className="mt-3">
+            To make a request, email {" "}
+            <a href={EMAIL_URL} className="text-gold underline underline-offset-4">
+              hello@circlesite.uk
+            </a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-serif text-2xl text-ink mb-3">Cookies and analytics</h2>
+          <p>
+            Our website may use basic cookies or similar technologies needed for the website to function.
+            If analytics or tracking tools are added in future, this Privacy Policy may be updated to explain how they are used.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-serif text-2xl text-ink mb-3">Changes to this Privacy Policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time. Any updates will be posted on this page.
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+);
 
 // ---------- Footer ----------
 const Footer = () => (
@@ -627,10 +728,11 @@ const Footer = () => (
         <div className="md:col-span-3">
           <p className="overline mb-4">Explore</p>
           <ul className="space-y-3 text-ink">
-            <li><a href="#features" className="hover:text-gold transition-colors">Features</a></li>
-            <li><a href="#process" className="hover:text-gold transition-colors">Process</a></li>
-            <li><a href="#pricing" className="hover:text-gold transition-colors">Pricing</a></li>
-            <li><a href="#faq" className="hover:text-gold transition-colors">FAQ</a></li>
+            <li><a href="/#features" className="hover:text-gold transition-colors">Features</a></li>
+            <li><a href="/#process" className="hover:text-gold transition-colors">Process</a></li>
+            <li><a href="/#pricing" className="hover:text-gold transition-colors">Pricing</a></li>
+            <li><a href="/#faq" className="hover:text-gold transition-colors">FAQ</a></li>
+            <li><a href="/privacy-policy" className="hover:text-gold transition-colors">Privacy Policy</a></li>
           </ul>
         </div>
         <div className="md:col-span-4">
@@ -711,10 +813,24 @@ const FloatingWhatsApp = () => {
 function App() {
   useInViewReveal();
 
+  const isPrivacyPage = window.location.pathname === "/privacy-policy";
+
   useEffect(() => {
-    // Light ping so backend wakes (status check pattern kept minimal)
-    axios.get(`${API}/`).catch(() => {});
-  }, []);
+    if (!isPrivacyPage) {
+      axios.get(`${API}/`).catch(() => {});
+    }
+  }, [isPrivacyPage]);
+
+  if (isPrivacyPage) {
+    return (
+      <div className="App bg-ivory min-h-screen">
+        <Nav />
+        <PrivacyPolicy />
+        <Footer />
+        <Toaster position="top-center" richColors />
+      </div>
+    );
+  }
 
   return (
     <div className="App bg-ivory min-h-screen">
